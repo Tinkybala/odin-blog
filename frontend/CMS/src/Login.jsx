@@ -13,6 +13,7 @@ function Login() {
         password: '',
         website: 'cms', 
     });
+    const [errorMessage, setErrorMessage] = useState('');
 
     const { isAuthenticated, setIsAuthenticated, setUser, user} = useContext(AuthContext);
 
@@ -29,7 +30,9 @@ function Login() {
 
 
         if(!response.ok) {
-            console.error(await response.json());
+            const result = await response.json()
+            console.error(result);
+            setErrorMessage(result.message);
         } else {
             const {userID, token, first_name} = await response.json();
             localStorage.setItem('countries_token', token)
@@ -56,6 +59,7 @@ function Login() {
                                 <input type="password" name="password" value={formData.password} placeholder='Password' onChange={handleOnChange} className={styles.input}></input>
                         </div>
                         <button type="submit">Submit</button>
+                        {errorMessage}
                     </form>
                     <p>Don't have an account? <Link to="/signup">Sign up here</Link></p>
                 </div>

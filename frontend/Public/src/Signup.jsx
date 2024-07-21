@@ -1,8 +1,19 @@
 import { Link } from 'react-router-dom';
 import Header from '../components/nav';
 import styles from '../stylesheets/Signup.module.css';
+import { useState } from 'react';
 
 function Signup() {
+    
+    const [errors, setErrors] = useState({
+        email: false,
+        password: false,
+        password2: false,
+        first_name: false,
+        last_name: false
+    });
+
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         const response = await fetch("http://localhost:3000/signup", {
@@ -19,6 +30,7 @@ function Signup() {
         })
 
         const data = await response.json();
+        //add the interactive part here
         console.log(data);
     }
 
