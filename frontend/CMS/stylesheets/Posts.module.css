@@ -1,0 +1,48 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-column-gap: 80px;
+    grid-row-gap: 80px;
+    flex: 4;
+    margin-bottom: 50px;
+    justify-items: center;
+}
+
+
+
+.title {
+    flex: 1;
+}
+
+.create {
+    background-color: rgba(0,0,0,0);
+    transition: transform 0.4s;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.create:hover {
+    transform: scale(1.1);
+}
+
+.create:focus {
+    outline: none;
+}
+
+.create:active {
+    transform: scale(1);
+    transition: transform;
+}
+
+.create p {
+    color: white;
+}

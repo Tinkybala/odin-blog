@@ -1,0 +1,13 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post, .comments{
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: rgb(2, 2, 32);
+    width: 60%;
+}
+

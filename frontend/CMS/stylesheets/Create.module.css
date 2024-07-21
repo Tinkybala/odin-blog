@@ -1,0 +1,20 @@
+
+.titleInput {
+    height: 2rem;
+    width: 60%;
+}
+
+.form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.form input{
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    color: black;
+}

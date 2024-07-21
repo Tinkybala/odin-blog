@@ -1,0 +1,29 @@
+.header {
+    background-color: black;
+    box-shadow: 0px 2px 5px #46586e;
+}
+
+.title {
+    margin: 0;
+}
+
+.title a {
+    color: white;
+}
+
+.title a:hover {
+    color: rgb(206, 198, 198);
+}
+
+.nav {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 10px;
+}
+
+.options{
+display: flex;
+gap: 20px;
+list-style-type: none;
+}
