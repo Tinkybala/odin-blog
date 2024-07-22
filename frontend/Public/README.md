@@ -1,8 +1,8 @@
-# React + Vite
+#Blog Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+In the project, I have a RESTful API created with node that connects to a mongoDB database. There are 2 seperate frontends: One for readers, and one content management system website, both of which uses the API to modify the database.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Things that are still in progress:
+1. More interactive frontend (changing colors of input borders etc)
+2. Nicer website design
+3. Image uploads onto some file storage service
